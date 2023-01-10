@@ -12,15 +12,23 @@ class Appa extends React.Component {
       
 changeState (){
       const{isLogginActive} = this.state;
-      // if(isLogginActive)
-}
+      if(isLogginActive) {
+            this.RightSide.classList.remove("right");
+            this.RightSide.classList.add("left");
+      }else {
+            this.RightSide.classList.remove("left");
+            this.RightSide.classList.add("right");
+      }
+
+      this.setState((prevState) =>  ({isLogginActive: !prevState.isLogginActive}))
+ }
 
       render() { 
             const {isLogginActive} = this.state;
             const current = isLogginActive ? "Register":"Login";
             const currentActive = isLogginActive ? "login" : "register"; 
-            return (
-                  <div className='Appa'>
+            return (  <div>
+ <div className='Appa'>
                         <div className="login">
                               <div className="container">
                                     {isLogginActive && (
@@ -35,6 +43,8 @@ changeState (){
                         </div>
 
                   </div>
+            </div>
+                 
             );
       }
 }

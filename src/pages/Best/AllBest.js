@@ -88,13 +88,3 @@ function AllBest(props) {
 export default AllBest;
 
 
-// render() {
-//       const data =[{"name":"test1"},{"name":"test2"}];
-//       return (
-//         <div>
-//         {data.map(function(d, idx){
-//            return (<li key={idx}>{d.name}</li>)
-//          })}
-//         </div>
-//       );
-//     }

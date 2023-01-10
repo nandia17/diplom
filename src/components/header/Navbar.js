@@ -15,7 +15,7 @@ const Navbar = () => {
                         <Link to="/home">Home</Link>
                     </li>
                     <li>
-                        <Link to="/how_to">Жанр</Link>
+                        <Link to="/genre">Жанр</Link>
                     </li>
                     <li>
                         <Link to="/news">Мэдээ</Link>
@@ -33,7 +33,7 @@ const Navbar = () => {
                         <Link to="/login">Нэвтрэх</Link>
                     </li>
                     <li>
-                        <Link to="/signup">Бүртгүүлэх</Link>
+                        <Link to="/dashboard">Dashboard</Link>
                     </li>
              </ul>
       </nav> 

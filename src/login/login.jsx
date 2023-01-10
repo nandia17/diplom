@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../components/header/Navbar';
 import loginImg from "./login.png";
 export class Login extends React.Component {
 
@@ -9,7 +8,7 @@ export class Login extends React.Component {
 
     render(){
         return <div className='base-container' ref={this.containerRef}>
-            <Navbar/>
+          
             <div className='header'>Login</div>
             <div className='content'>
                 <div className="image">
@@ -30,7 +29,11 @@ export class Login extends React.Component {
             <div className="footer-login">
                 <button type='button' className="btn-login">Login</button>
             </div>
+            
         </div>
+       
+       
+        
         
 
     } 

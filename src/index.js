@@ -4,21 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import About from './pages/About/about';
 import Hom from './components/Home/Home';
-
-
-import How from './pages/How/How';
-import News from './pages/News/News';
-import LatestReviews from './pages/LatestReviews/LatestReviews';
 import Contact from './pages/Contact/Contact';
-import Dell from './pages/Dell/Dell';
 
-
-import Genre from './pages/How/How';
 import Accordion from './pages/News/News';
-import { Login } from './login';
 import Appa from './login/loginpage';
+import Logna from './pages/Newtreh/newtreh';
+import Dashboard from './pages/Dashboard/Dashboard';
+import Dashboard2 from './pages/Nemeh/Nemeh';
+import Dashboard1 from './pages/Dashboard/Dashboard';
+import Genre from './pages/Genre/Genre';
+import MyStories from './pages/Mystories/stories';
+import Profile from './pages/Profile/profile';
 
 
 // export { Login } from "./login";
@@ -29,13 +26,19 @@ root.render(
    <Routes>
       <Route path='/' element={<App/>}/>
       <Route path='/home' element={<Hom/>}/>
-      <Route path='/how_to' element={<Genre/>}/>
+      <Route path='/genre' element={<Genre/>}/>
       <Route path='/news' element={<Accordion/>}/>
       <Route path='/reviews' element={<Appa/>}/>
       <Route path='/contact' element={<Contact/>}/>
-      <Route path='/about' element={<About/>}/>
-      <Route path='/dell' element={<Dell/>}/>
-       <Route path='/login' element={<Login/>}/>   
+      <Route path='/login' element={<Logna/>}/>
+      <Route path='/stories' element={<MyStories/>}/>
+      <Route path='/dashboard/privacy' element={<Profile/>}/>
+      
+      <Route path='/dashboard' element={<Dashboard/>}/>
+      <Route path='/dashboard/nemeh' element={<Dashboard2/>}/>
+      <Route path='/dashboard/new' element={<Dashboard1/>}/>
+      {/* <Route path='/dashboard/privacy' element={<Dashboard2/>}/> */}
+       {/* <Route path='/login' element={<Login/>}/>    */}
      
    </Routes>
 </Router>

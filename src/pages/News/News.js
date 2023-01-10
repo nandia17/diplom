@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import Footer from '../../components/footer/footer';
 import Navbar from '../../components/header/Navbar';
-import { Alldata, chapters } from '../Data/data';
+import { Alldata, Chapters} from '../Data/data';
 import {Fiminus, Fiplus} from 'react-icons/fi';
 import styled from 'styled-components';
 
@@ -102,18 +102,18 @@ const toggle = ele => {
   <div class="accordion">
   <AccordionSection>
       <Container>
-  {chapters.map(function(el,ele){
+  {Alldata.map(function(el,ele){
                         return(      
                        
      
 <div>
       <Wrap onClick={() => toggle(ele)} key={ele}>
-    <h1 key={ele}>{el.chapter1}</h1>
+    <h1 key={ele}>{el.author}</h1>
     {/* <span>{clicked === index ? <Fiminus/> : <Fiplus/>}</span> */}
     </Wrap>
     {clicked === ele ? (
  <Dropdown>
- <p key={ele}>{el.chapter}</p>
+ <p key={ele}>{el.description}</p>
  </Dropdown>
     ):null}
    
